@@ -15,7 +15,7 @@ using System.Reflection;
     nameof(PickupPushPull),
     AssemblyInfoParams.Version,
     AssemblyInfoParams.Author,
-    downloadLink: ""
+    downloadLink: "https://github.com/NotAKidOnSteam/PickupPP"
 )]
 [assembly: MelonGame("Alpha Blend Interactive", "ChilloutVR")]
 [assembly: MelonPlatform(MelonPlatformAttribute.CompatiblePlatforms.WINDOWS_X64)]
