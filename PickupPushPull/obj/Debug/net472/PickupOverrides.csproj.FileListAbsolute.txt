@@ -1,3 +1,0 @@
-C:\Users\krist\Desktop\Kafe_CVR_Mods-master\PickupOverrides\obj\Debug\net472\PickupOverrides.csproj.AssemblyReference.cache
-C:\Users\krist\Desktop\Kafe_CVR_Mods-master\PickupOverrides\obj\Debug\net472\PickupOverrides.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\krist\Desktop\Kafe_CVR_Mods-master\PickupOverrides\obj\Debug\net472\PickupOverrides.csproj.CoreCompileInputs.cache
