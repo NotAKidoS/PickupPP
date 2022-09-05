@@ -26,4 +26,4 @@ https://documentation.abinteractive.net/official/legal/tos/#7-modding-our-games
 
 > When releasing mods to the public, it is required to state, that the mod authors and modification are in no affiliation with ABI and not supported by ABI. :trollface:
 
-> 
+> i ran out of places to steal disclaimers from
