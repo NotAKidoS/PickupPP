@@ -7,6 +7,12 @@ The fucked-rotation branch has my attempt at adding prop rotation. Could not get
 
 As you can tell, i have no fucking clue how to use GitHub.
 
+
+
+https://user-images.githubusercontent.com/37721153/188521473-9d180795-785a-4ba0-b97f-1e9163d1ba14.mp4
+
+
+
 ---
 
 Here is the block of text where I tell you this mod is not affiliated or endorsed by ABI. 
