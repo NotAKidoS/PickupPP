@@ -1,4 +1,4 @@
-# PickupPP
+# PickupPushPull
 Allows you to push & pull props with Gamepad and VR.
 
 Simply maps Gamepad & VR joystickY input to objectPushPull.
