@@ -1,0 +1,47 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\krist\\Desktop\\Kafe_CVR_Mods-master\\PickupOverrides\\PickupOverrides.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\krist\\Desktop\\Kafe_CVR_Mods-master\\PickupOverrides\\PickupOverrides.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\krist\\Desktop\\Kafe_CVR_Mods-master\\PickupOverrides\\PickupOverrides.csproj",
+        "projectName": "PickupOverrides",
+        "projectPath": "C:\\Users\\krist\\Desktop\\Kafe_CVR_Mods-master\\PickupOverrides\\PickupOverrides.csproj",
+        "packagesPath": "C:\\Users\\krist\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\krist\\Desktop\\Kafe_CVR_Mods-master\\PickupOverrides\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\krist\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
