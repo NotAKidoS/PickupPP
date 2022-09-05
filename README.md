@@ -3,6 +3,14 @@ Allows you to push & pull props with Gamepad and VR.
 
 Simply maps Gamepad & VR joystickY input to objectPushPull.
 
+The fucked-rotation branch has my attempt at adding prop rotation. Could not get it to feel nice so I gave up on it.
+
+
+
+
+
+
+
 ---
 
 Here is the block of text where I tell you this mod is not affiliated or endorsed by ABI. 
