@@ -5,11 +5,7 @@ Simply maps Gamepad & VR joystickY input to objectPushPull.
 
 The fucked-rotation branch has my attempt at adding prop rotation. Could not get it to feel nice so I gave up on it.
 
-
-
-
-
-
+As you can tell, i have no fucking clue how to use GitHub.
 
 ---
 
