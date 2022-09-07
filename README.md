@@ -1,7 +1,9 @@
 # PickupPushPull
 Allows you to push & pull props with Gamepad and VR.
 
-Simply maps Gamepad & VR joystickY input to objectPushPull.
+Simply maps Gamepad & VR joystick input to objectPushPull.
+
+Hold left bumper on Gamepad to use objectPushPull.
 
 The fucked-rotation branch has my attempt at adding prop rotation. Could not get it to feel nice so I gave up on it.
 
