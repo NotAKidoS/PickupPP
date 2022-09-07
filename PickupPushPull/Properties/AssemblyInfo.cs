@@ -2,7 +2,6 @@
 using PickupPushPull.Properties;
 using System.Reflection;
 
-
 [assembly: AssemblyVersion(AssemblyInfoParams.Version)]
 [assembly: AssemblyFileVersion(AssemblyInfoParams.Version)]
 [assembly: AssemblyInformationalVersion(AssemblyInfoParams.Version)]
@@ -15,8 +14,9 @@ using System.Reflection;
     nameof(PickupPushPull),
     AssemblyInfoParams.Version,
     AssemblyInfoParams.Author,
-    downloadLink: ""
+    downloadLink: "https://github.com/NotAKidOnSteam/PickupPP"
 )]
+
 [assembly: MelonGame("Alpha Blend Interactive", "ChilloutVR")]
 [assembly: MelonPlatform(MelonPlatformAttribute.CompatiblePlatforms.WINDOWS_X64)]
 [assembly: MelonPlatformDomain(MelonPlatformDomainAttribute.CompatibleDomains.MONO)]
@@ -24,6 +24,6 @@ using System.Reflection;
 namespace PickupPushPull.Properties;
 internal static class AssemblyInfoParams
 {
-    public const string Version = "1.0.0";
+    public const string Version = "1.2.0";
     public const string Author = "NotAKidoS";
 }
