@@ -110,11 +110,11 @@ public class PickupPushPull : MelonMod
         //VR Input Patch
         [HarmonyPostfix]
         [HarmonyPatch(typeof(InputModuleSteamVR), "UpdateInput")]
-        private static void AfterUpdateInput(ref SteamVR_Action_Boolean ___steamVrButtonBTouch)
+        private static void AfterUpdateInput(ref SteamVR_Action_Boolean ___steamVrButtonATouch)
         {
             if (!MetaPort.Instance.isUsingVr) return;
 
-            bool button = ___steamVrButtonBTouch.GetState(SteamVR_Input_Sources.LeftHand);
+            bool button = ___steamVrButtonATouch.GetState(SteamVR_Input_Sources.LeftHand);
 
             if (button && enableRot)
             {
