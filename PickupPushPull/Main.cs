@@ -4,6 +4,7 @@ using ABI_RC.Core.Savior;
 using HarmonyLib;
 using MelonLoader;
 using UnityEngine;
+using Valve.VR;
 
 namespace PickupPushPull;
 
@@ -61,12 +62,14 @@ public class PickupPushPull : MelonMod
         }
 
         //Gamepad Input Patch
+        //I realize this runs even if Gamepad Input is disabled, so now it also provides Mouse & Keyboard the ability to move/rotate pickups.
         [HarmonyPostfix]
         [HarmonyPatch(typeof(InputModuleGamepad), "UpdateInput")]
-        private static void AfterUpdateInput(ref InputModuleGamepad __instance)
+        private static void AfterUpdateInput()
         {
-            bool button1 = Input.GetButton("Controller Left Button");
-            bool button2 = Input.GetButton("Controller Right Button");
+
+            bool button1 = Input.GetButton("Controller Left Button") || Input.GetKey(KeyCode.Mouse4) || Input.GetKey(KeyCode.Mouse3);
+            bool button2 = Input.GetButton("Controller Right Button") || Input.GetKey(KeyCode.Mouse3);
 
             if (button1)
             {
@@ -109,7 +112,12 @@ public class PickupPushPull : MelonMod
         [HarmonyPatch(typeof(InputModuleSteamVR), "UpdateInput")]
         private static void AfterUpdateInput(ref InputModuleSteamVR __instance)
         {
-            bool button = CVRInputManager.Instance.interactLeftValue > 0.9;
+            if (!MetaPort.Instance.isUsingVr)
+            {
+                return;
+            }
+
+            bool button = __instance.steamVrButtonATouch.GetState(SteamVR_Input_Sources.LeftHand);
             if (button && enableRot)
             {
                 if (!lockedVRInput)
