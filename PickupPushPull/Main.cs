@@ -96,14 +96,11 @@ public class PickupPushPull : MelonMod
 
                 CVRInputManager.Instance.objectPushPull += CVRInputManager.Instance.rawLookVector.y * ppSpeed;
             }
-            else
+            else if (lockedFSInput)
             {
-                if (lockedFSInput)
-                {
-                    lockedFSInput = false;
-                    Cursor.lockState = savedCursorLockState;
-                    PlayerSetup.Instance._movementSystem.disableCameraControl = false;
-                }
+                lockedFSInput = false;
+                Cursor.lockState = savedCursorLockState;
+                PlayerSetup.Instance._movementSystem.disableCameraControl = false;
             }
         }
 
@@ -134,16 +131,14 @@ public class PickupPushPull : MelonMod
                     cvrpickupObject.initialRotationalOffset *= Quaternion.AngleAxis(rotSpeed * (CVRInputManager.Instance.floatDirection / 2f), Vector3.right) * Quaternion.AngleAxis(rotSpeed * CVRInputManager.Instance.rawLookVector.x, Vector3.up);
                 }
             }
-            else
+            else if (lockedVRInput)
             {
-                if (lockedVRInput)
-                {
-                    lockedVRInput = false;
-                    PlayerSetup.Instance._movementSystem.canRot = true;
-                    PlayerSetup.Instance._movementSystem.disableCameraControl = false;
-                }
-                CVRInputManager.Instance.objectPushPull += CVRInputManager.Instance.scrollValue * ppSpeed;
+                lockedVRInput = false;
+                PlayerSetup.Instance._movementSystem.canRot = true;
+                PlayerSetup.Instance._movementSystem.disableCameraControl = false;
             }
+
+            CVRInputManager.Instance.objectPushPull += CVRInputManager.Instance.scrollValue * ppSpeed;
         }
     }
 }
